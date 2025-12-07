@@ -1,0 +1,50 @@
+# Copy this file to .env and fill in your values
+
+# Database Configuration
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=promotheans_db
+
+# Server Configuration
+PORT=3001
+NODE_ENV=development
+
+# JWT Secret (CHANGE THIS TO A RANDOM STRING IN PRODUCTION)
+JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
+
+# Admin Configuration
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=change_this_password
+
+# File Upload Configuration
+# 
+# For LOCAL DEVELOPMENT (backend on same machine):
+# USE_FTP=false
+# UPLOAD_DIR=../The Promotheans/assets/community_art
+#
+# For REMOTE BACKEND (Railway, etc.) uploading to Hostinger via FTP:
+# USE_FTP=true
+# FTP_HOST=ftp.theprometheans.io
+# FTP_USER=u336403169.therealprometheans
+# FTP_PASSWORD=therealPromotheans2025!
+# FTP_PORT=21
+# FTP_SECURE=false (set to true for FTPS)
+# UPLOAD_DIR=../The Promotheans/assets/community_art (local temp directory)
+#
+# For BACKEND ON HOSTINGER (direct file system):
+# USE_FTP=false
+# UPLOAD_DIR=/home/u336403169/domains/theprometheans.io/public_html/assets/community_art
+#
+# MAX_FILE_SIZE is in bytes (5242880 = 5MB)
+# You can increase this if needed, but also check hosting PHP limits
+#
+USE_FTP=false
+FTP_HOST=ftp.theprometheans.io
+FTP_USER=u336403169.therealprometheans
+FTP_PASSWORD=therealPromotheans2025!
+FTP_PORT=21
+FTP_SECURE=false
+UPLOAD_DIR=../The Promotheans/assets/community_art
+MAX_FILE_SIZE=5242880
+
